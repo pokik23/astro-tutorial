@@ -1,0 +1,8 @@
+---
+const links = [
+    {link: '/', text: 'Home'},
+    {link: '/about/', text: 'About'},
+    {link: '/blog/', text: 'Blog'}
+]
+---
+{ links.map((link, item) => <span><a href={link.link}>{link.text}</a>{item === links.length - 1 ? '' : ' - '}</span>) }

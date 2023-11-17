@@ -5,4 +5,6 @@ const links = [
     {link: '/blog/', text: 'Blog'}
 ]
 ---
-{ links.map((link, item) => <span><a href={link.link}>{link.text}</a>{item === links.length - 1 ? '' : ' - '}</span>) }
+<ul class="nav-links">
+{ links.map((link, item) => <li><a href={link.link}>{link.text}</a></li>) }
+</ul>
